@@ -1,0 +1,340 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box; /*para que los elementos no se salgan del contenedor*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*-------barra de bavegación---------*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ABEBC6;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+.responsive { /*menú modo escritorio*/
+    display: none;
+}
+
+.fa{
+    margin: 20px;
+    
+}
+
+.logo{
+     
+    max-width: 40px;
+    margin: 10px;
+    
+}
+
+nav ul li{
+    margin:20px;
+      
+}
+
+
+
+#check{ /*cuadro de check*/
+    display: none;
+}
+/*------------MAIN---------------*/
+
+main{
+    background-color: #EAFAF1;
+    
+   }
+
+.title{
+    padding: 30px;
+}   
+
+h1{
+    font-size: 50px;
+    text-align: start;
+    color: #283747;
+    margin: 10px;
+    font-weight: bold;
+    background-color: #AEB6BF;
+}   
+
+h2{
+    font-size: 40px;
+    text-align: start;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.picture{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.picture01{
+    border-radius: 30px 30px 30px 30px;
+    
+}
+
+/*-----about me----*/
+.about{
+    padding: 40px;
+    display: block;
+    text-align: justify;
+    font-size: 20px;
+}
+
+h3{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+}
+
+p{
+    margin: 10px;
+}
+
+
+/*-----SKILLS----*/
+
+.skills{
+    background-color: #283747;
+    padding: 30px;
+}
+.h3-skills{
+    color: #EAFAF1;
+    text-align: start;
+    text-decoration:underline
+
+
+}
+
+.skills-0 , li{
+    
+    margin: 10px;
+    margin-top: 5px;
+    color: #EB984E;
+    list-style: none;
+}
+
+/*----PERCENTAGE BARS-----*/
+.percentage{
+    margin: 10px;
+    
+    
+    color : #000;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+
+}
+#html{
+    background-color:#EAFAF1 ;
+    width: 70%;
+
+}
+
+#css{
+    background-color:#EAFAF1 ;
+    width: 70%;
+}
+
+#js{
+    background-color:#EAFAF1 ;
+    width: 60%;
+}
+
+#python{
+    background-color:#EAFAF1 ;
+    width: 80%;
+}
+
+#ux{
+    background-color:#EAFAF1 ;
+    width: 85%;
+}
+
+@keyframes bar{
+    from {
+        background-color: #283747;
+        width: 10%;
+    }
+    to{
+        background-color: #EAFAF1;
+        width: 70%;
+    }
+}
+
+#html, #css{
+    animation: bar 3s;
+
+}
+
+@keyframes bar2{
+    from {
+        background-color: #283747;
+        width: 10%;
+    }
+    to{
+        background-color: #EAFAF1;
+        width: 60%;
+    }
+}
+
+#js{
+    animation: bar2 3s;
+
+}
+
+@keyframes bar3{
+    from {
+        background-color: #283747;
+        width: 10%;
+    }
+    to{
+        background-color: #EAFAF1;
+        width: 80%;
+    }
+}
+
+#python{
+    animation: bar3 3s;
+
+}
+
+@keyframes bar4{
+    from {
+        background-color: #283747;
+        width: 10%;
+    }
+    to{
+        background-color: #EAFAF1;
+        width: 85%;
+    }
+}
+
+#ux{
+    animation: bar4 3s;
+
+}
+
+/*------CONTACTO----*/
+
+.contact{
+    background-color: #D5DBDB;
+    padding: 30px;
+    text-align:justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+legend{
+    background-color: #283747;
+    color: #D5DBDB;
+    width: 70%;
+    margin: 10px;
+}
+
+.for{
+    margin-left: 10px;
+}
+
+.text{
+    
+    padding: 10px;
+    text-align: center;
+    
+    
+}
+
+.form{
+    margin: 10px;
+}
+
+
+
+/*----FOOTER----*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    background-color: #283747;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.icon{
+    margin: 20px;
+}
+.linkedin{
+    width: 40px;
+}
+
+.gith{
+    width: 40px;
+}
+
+.instagram{
+    width: 40px;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+
+}
+.btn{
+    
+    padding: 10px;
+    width: 80px;
+}
+
+   
+
+/* VERSION ESCRITORIO */
+
+@media (min-width: 450px){
+    .responsive {
+        display: flex;
+        color: black;
+    }
+   
+
+    .checkbtn{
+        display: none;
+    }
+
+    .about{
+        padding-top: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+        
+    }
+    p{
+        padding-top: 20px;
+    }
+
+    .percentage{
+        
+        width: 50%;
+        
+    }
+    .container2{
+        display: flex;
+        justify-content: center;
+        background-color: #D5DBDB;
+        
+        
+    }
+
+}
